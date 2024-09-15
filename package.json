@@ -1,0 +1,45 @@
+{
+  "name": "erc4626-vault-integrations",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "compile": "npx hardhat compile",
+    "deploy": "npx hardhat run scripts/deploy.ts --network",
+    "etherscan-verify": "npx hardhat verify --network",
+    "test": "npx hardhat test",
+    "coverage": "npx hardhat coverage"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-chai-matchers": "^2.0.2",
+    "@nomicfoundation/hardhat-ethers": "^3.0.4",
+    "@nomicfoundation/hardhat-network-helpers": "^1.0.9",
+    "@nomicfoundation/hardhat-toolbox": "^3.0.0",
+    "@nomicfoundation/hardhat-verify": "^1.1.1",
+    "@typechain/ethers-v6": "^0.4.3",
+    "@typechain/hardhat": "^8.0.3",
+    "@types/chai": "^4.3.7",
+    "@types/mocha": "^10.0.2",
+    "ethers": "6.7.1",
+    "hardhat": "^2.18.0",
+    "hardhat-abi-exporter": "2.10.1",
+    "hardhat-contract-sizer": "2.10.0",
+    "hardhat-gas-reporter": "^1.0.9",
+    "solidity-coverage": "^0.8.5",
+    "typechain": "^8.3.1"
+  },
+  "dependencies": {
+    "@chainlink/contracts": "0.8.0",
+    "@layerzerolabs/lz-evm-oapp-v2": "^2.3.6",
+    "@layerzerolabs/lz-evm-protocol-v2": "^2.3.6",
+    "@openzeppelin/contracts": "5.0.2",
+    "@openzeppelin/hardhat-upgrades": "^3.2.0",
+    "dotenv": "16.3.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
+  },
+  "resolutions": {
+    "@openzeppelin/contracts": "^5.0.2",
+    "@openzeppelin/contracts-upgradeable": "^5.0.2"
+  }
+}
